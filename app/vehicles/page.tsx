@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
 
 const vehicles = [
   {
@@ -19,6 +20,7 @@ const vehicles = [
     description: "Potência e elegância em um só veículo.",
     price: "R$ 5.000/dia",
     specs: ["670 cv", "0-100 km/h em 3s", "Velocidade máxima: 330 km/h"],
+    slug: "ferrari-488-gtb",
   },
   {
     name: "Lamborghini Huracán",
@@ -28,6 +30,7 @@ const vehicles = [
     description: "Design agressivo e performance inigualável.",
     price: "R$ 5.500/dia",
     specs: ["640 cv", "0-100 km/h em 2.9s", "Velocidade máxima: 325 km/h"],
+    slug: "lamborghini-huracan",
   },
   {
     name: "Rolls-Royce Phantom",
@@ -37,6 +40,7 @@ const vehicles = [
     description: "O ápice do luxo e conforto automotivo.",
     price: "R$ 7.000/dia",
     specs: ["563 cv", "0-100 km/h em 5.3s", "Interior personalizado"],
+    slug: "rolls-royce-phantom",
   },
   {
     name: "Bentley Continental GT",
@@ -46,6 +50,7 @@ const vehicles = [
     description: "Elegância britânica com performance excepcional.",
     price: "R$ 6.000/dia",
     specs: ["626 cv", "0-100 km/h em 3.7s", "Interior artesanal"],
+    slug: "bentley-continental-gt",
   },
   {
     name: "Porsche 911 GT3 RS",
@@ -55,6 +60,7 @@ const vehicles = [
     description: "Precisão alemã para os amantes de velocidade.",
     price: "R$ 5.800/dia",
     specs: ["520 cv", "0-100 km/h em 3.2s", "Aerodinâmica avançada"],
+    slug: "porsche-911-gt3-rs",
   },
   {
     name: "Mercedes-Maybach S-Class",
@@ -64,6 +70,7 @@ const vehicles = [
     description: "Luxo executivo em sua forma mais refinada.",
     price: "R$ 6.500/dia",
     specs: ["496 cv", "0-100 km/h em 4.8s", "Interior ultra silencioso"],
+    slug: "mercedes-maybach-s-class",
   },
 ];
 
@@ -114,7 +121,9 @@ export default function VehiclesPage() {
                       <span className="text-lg font-semibold">
                         {vehicle.price}
                       </span>
-                      <Button>Reservar</Button>
+                      <Link href={`/blog/${vehicle.slug}`}>
+                        <Button>Reservar</Button>
+                      </Link>
                     </CardFooter>
                   </Card>
                 ))}
