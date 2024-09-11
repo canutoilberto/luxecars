@@ -96,7 +96,7 @@ export default function ContactPage() {
                 <p>Sáb - Dom: fechado</p>
               </div>
               <div className="mt-6">
-                <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+                <h3 className="text-lg font-semibold mb-2">Nos siga!</h3>
                 <div className="flex space-x-4">
                   <a
                     href="https://facebook.com"
