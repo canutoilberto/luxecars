@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="border-b">
-      <div className="container mx-auto flex items-center justify-between py-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         {/* Logomarca */}
         <Link href="/" className="flex items-center space-x-2">
           <Car className="h-6 w-6" />
