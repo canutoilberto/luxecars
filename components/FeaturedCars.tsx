@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const featuredCars = [
   {
@@ -16,6 +17,7 @@ const featuredCars = [
       "https://images.pexels.com/photos/16386035/pexels-photo-16386035/free-photo-of-vermelho-construcao-predio-edificio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     description: "Potência e elegância em um só veículo.",
     price: "R$ 5.000/dia",
+    post: "https://luxecars.vercel.app/blog/ferrari-488-gtb",
   },
   {
     name: "Lamborghini Huracán",
@@ -23,6 +25,7 @@ const featuredCars = [
       "https://images.pexels.com/photos/17632045/pexels-photo-17632045/free-photo-of-cidade-meio-urbano-luxo-de-pe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     description: "Design agressivo e performance inigualável.",
     price: "R$ 5.500/dia",
+    post: "https://luxecars.vercel.app/blog/lamborghini-huracan",
   },
   {
     name: "Rolls-Royce Phantom",
@@ -30,6 +33,7 @@ const featuredCars = [
       "https://i.pinimg.com/originals/ea/c9/15/eac91546ef2ab258d73e076df200d6db.png",
     description: "O ápice do luxo e conforto automotivo.",
     price: "R$ 7.000/dia",
+    post: "https://luxecars.vercel.app/blog/rolls-royce-phantom",
   },
 ];
 
@@ -59,7 +63,9 @@ export default function FeaturedCars() {
               </CardContent>
               <CardFooter className="flex justify-between items-center p-4">
                 <span className="text-lg font-semibold">{car.price}</span>
-                <Button>Reservar</Button>
+                <Link href={car.post}>
+                  <Button>Reservar</Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}
