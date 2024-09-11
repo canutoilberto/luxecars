@@ -27,17 +27,17 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <main className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Nos Contate</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card>
             <CardHeader>
-              <CardTitle>Send Us a Message</CardTitle>
+              <CardTitle>Nos envie uma mensagem</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">Nome</Label>
                   <Input
                     id="name"
                     value={name}
@@ -56,7 +56,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Mensagem</Label>
                   <Textarea
                     id="message"
                     value={message}
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <Button type="submit" className="w-full">
-                  Send Message
+                  Enviar mensagem
                 </Button>
               </form>
             </CardContent>
@@ -73,25 +73,27 @@ export default function ContactPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
+              <CardTitle>Informações</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5 text-muted-foreground" />
-                <span>123 Blog Street, City, Country, 12345</span>
+                <span>Rua das Luxúrias, 123</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-muted-foreground" />
-                <span>+1 (123) 456-7890</span>
+                <span>(11) 1234-5678</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-muted-foreground" />
-                <span>contact@myblog.com</span>
+                <span>contato@luxecars.com</span>
               </div>
               <div className="mt-6">
-                <h3 className="text-lg font-semibold mb-2">Office Hours</h3>
-                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                <p>Saturday - Sunday: Closed</p>
+                <h3 className="text-lg font-semibold mb-2">
+                  Horário de Funcionamento
+                </h3>
+                <p>Seg - Sex: 9:00 - 17:00</p>
+                <p>Sáb - Dom: fechado</p>
               </div>
               <div className="mt-6">
                 <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
