@@ -10,7 +10,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">LuxeCars</h3>
             <p className="text-sm text-muted-foreground">
               Oferecendo a melhor experiência em locação de veículos de luxo
-              desde 2023.
+              desde 2010.
             </p>
           </div>
           <div>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-muted-foreground">
-          © 2023 LuxeCars. Todos os direitos reservados.
+          © {new Date().getFullYear()} LuxeCars. Todos os direitos reservados.
         </div>
       </div>
     </footer>
