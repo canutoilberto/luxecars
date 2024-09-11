@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -20,7 +21,7 @@ export default function Header() {
           Alugue os carros mais exclusivos e viva momentos inesquecíveis
         </p>
         <Button size="lg" className="text-lg px-8 py-6">
-          Reserve Agora
+          <Link href="/vehicles">Reserve Agora</Link>
         </Button>
       </div>
     </header>
