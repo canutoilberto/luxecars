@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Shield, Clock, ThumbsUp } from "lucide-react";
+import Link from "next/link";
 
 const reasons = [
   {
@@ -65,7 +66,7 @@ export default function WhyChooseUs() {
             Pronto para experimentar o luxo?
           </h3>
           <Button size="lg" className="text-lg px-8 py-6">
-            Reserve seu carro de luxo agora
+            <Link href="/vehicles">Reserve seu carro de luxo agora</Link>
           </Button>
         </div>
       </div>
